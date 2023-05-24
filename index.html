@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alura-Challenge 1 Encriptador de texto</title>
+  </head>
+  <header>
+    <div class="vector">
+      <img src="img/Vector.png" />
+    </div>
+    <div class="titulo">
+      <h1>ENCRIPTADOR DE TEXTO</h1>
+    </div>
+  </header>
+  <body>
+    <div class="container">
+      <textarea
+        class="text-area"
+        id="texto"
+        rows="10"
+        cols="50"
+        placeholder="ingrese su texto aqui"
+        autofocus
+      ></textarea>
+      <textarea
+        class="resultado"
+        id="resultado"
+        rows="10"
+        cols="50"
+        placeholder="no se ha encontrado texto"
+      ></textarea>
+    </div>
+    <div class="terminos">
+      <img src="img/Vector (2).png" alt="logo-informacion" />
+      <p class="terminos-texto">solo minusculas y sin acentos</p>
+    </div>
+
+    <div class="botones">
+      <button onclick="encriptar()" class="btn">encriptar</button>
+      <button onclick="desencriptar()" class="btn-desencriptar">
+        desencriptar
+      </button>
+      <button onclick="copiarTexto()" class="copiar">copiar</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+  <footer>
+    <p class="copyright">&copy copyright Giacomano</p>
+  </footer>
+</html>
